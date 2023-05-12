@@ -45,7 +45,7 @@ const ALLOWED_HOSTS = getHosts(process.env.ALLOWED_HOSTS);
 const GZIP_METHOD = process.env.GZIP_METHOD;
 
 assert.ok(ACCESS_KEY, 'Missing ACCESS_KEY');
-assert.ok(ALLOWED_GZIP_METHODS.includes(GZIP_METHOD), `GZIP_METHOD must be one of the following values: ${JSON.stringify(ALLOWED_GZIP_METHODS)}`);
+// assert.ok(ALLOWED_GZIP_METHODS.includes(GZIP_METHOD), `GZIP_METHOD must be one of the following values: ${JSON.stringify(ALLOWED_GZIP_METHODS)}`);
 
 const server = http.createServer();
 
